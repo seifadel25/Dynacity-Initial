@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DynacityFront.props" />
+</Project>

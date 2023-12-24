@@ -1,0 +1,158 @@
+﻿@model IEnumerable<DynacityFront.DTO.EventDTO>
+@using Utility;
+
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpAcc
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="margin-right:0!important;margin-left:0!important;">
+    <div class="hero page-inner overlay"
+         style="background-image: url('/images/hero_bg_1.jpg')!important">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 text-center mt-5">
+                    <h1 class="heading" data-aos="fade-up">Properties</h1>
+
+                    <nav aria-label="breadcrumb"
+                         data-aos="fade-up"
+                         data-aos-delay="200">
+                        <ol class="breadcrumb text-center justify-content-center">
+                            <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li class="breadcrumb-item active text-white-50"
+                                aria-current="page">
+                                Events
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-4">
+        <div class="row pb-2">
+            <h1 class="text-primary">
+                Real-estate Events
+            </h1>
+            @if (httpAcc.HttpContext.Session.GetString(SD.SessionToken) != null && httpAcc.HttpContext.User.IsInRole("Admin"))
+            {
+                <div class="col text-end pt-1">
+                    <a class="btn btn-outline-primary" asp-action="Create">Add Event</a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="section section-properties">
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg- ">
+
+                        <div class="property-item mb-30">
+                            <a asp-area="" asp-controller="Event" asp-action="Details" asp-route-EventId="@item.EventId" class="img">
+                                @if (item.EventPhotoURL == null)
+                                {
+                                    <img src="~/images/img_1.jpg" alt="Image" class="img-fluid" />
+                                }
+                                <img src="@("~/image/"+item.EventPhotoURL)" asp-append-version="true" class="img-fluid" style="height:56vh!important" />
+                            </a>
+
+                            <div class="property-content">
+                                <div class="price mb-2">
+                                    <span>
+                                        @{
+                                            var SDate = item.StartDate.ToShortDateString();
+                                            var EDate = item.EndDate.ToShortDateString();
+                                        }
+                                        Start at From @Html.DisplayFor(modelItem=>SDate)-@Html.DisplayFor(modelItem=>EDate)
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="d-block mb-2 text-black-50">@Html.DisplayFor(modelItem => item.EventName)</span>
+                                    <span class="city d-block mb-3">@Html.DisplayFor(modelItem => item.Address)</span>
+
+
+                                    <a asp-area="" asp-controller="Event" asp-action="Details" asp-route-EventId="@item.EventId"
+                                       class="btn btn-primary py-2 px-3">See details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+    </div>
+    @if (httpAcc.HttpContext.Session.GetString(SD.SessionToken) != null && httpAcc.HttpContext.User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EndDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventPhotoURL)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventPhotoURL)
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" asp-controller="Event" asp-action="Update" asp-route-EventId="@item.EventId">Update</a>
+                        <a class="btn btn-secondary" asp-controller="Event" asp-action="Details" asp-route-EventId="@item.EventId">Details</a>
+                        <a class="btn btn-danger" asp-controller="Event" asp-action="Delete" asp-route-EventId="@item.EventId">Delete</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

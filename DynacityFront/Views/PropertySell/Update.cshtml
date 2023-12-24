@@ -1,0 +1,79 @@
+﻿@model DynacityFront.DTO.SellUpdateDTO
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+
+<h4>PropertyUpdateDTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <input hidden asp-for="SellId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="DatePosted" class="control-label"></label>
+                <input asp-for="DatePosted" class="form-control" />
+                <span asp-validation-for="DatePosted" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SellDiscription" class="control-label"></label>
+                <input asp-for="SellDiscription" class="form-control" />
+                <span asp-validation-for="SellDiscription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyUpdate.Title" class="control-label"></label>
+                <input asp-for="PropertyUpdate.Title" class="form-control" />
+                <span asp-validation-for="PropertyUpdate.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyUpdate.Description" class="control-label"></label>
+                <input asp-for="PropertyUpdate.Description" class="form-control" />
+                <span asp-validation-for="PropertyUpdate.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyUpdate.Bedrooms" class="control-label"></label>
+                <input asp-for="PropertyUpdate.Bedrooms" class="form-control" />
+                <span asp-validation-for="PropertyUpdate.Bedrooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyUpdate.Bathrooms" class="control-label"></label>
+                <input asp-for="PropertyUpdate.Bathrooms" class="form-control" />
+                <span asp-validation-for="PropertyUpdate.Bathrooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyUpdate.Area" class="control-label"></label>
+                <input asp-for="PropertyUpdate.Area" class="form-control" />
+                <span asp-validation-for="PropertyUpdate.Area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyUpdate.ProfilePicture" class="control-label"></label>
+                <input asp-for="PropertyUpdate.ProfilePicture" class="form-control" />
+                <span asp-validation-for="PropertyUpdate.ProfilePicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SellPrice" class="control-label"></label>
+                <input asp-for="SellPrice" class="form-control" />
+                <span asp-validation-for="SellPrice" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

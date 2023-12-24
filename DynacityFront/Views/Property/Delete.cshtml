@@ -1,0 +1,54 @@
+﻿@model DynacityFront.DTO.PropertyDTO
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Delete">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <input hidden asp-for="PropertyId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input disabled asp-for="Title" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input disabled  asp-for="Description" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Bedrooms" class="control-label"></label>
+                <input disabled asp-for="Bedrooms" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Bathrooms" class="control-label"></label>
+                <input disabled asp-for="Bathrooms" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Area" class="control-label"></label>
+                <input disabled asp-for="Area" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyMainImage" class="control-label"></label>
+                <input disabled asp-for="PropertyMainImage" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input disabled asp-for="Price" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Delete" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+    

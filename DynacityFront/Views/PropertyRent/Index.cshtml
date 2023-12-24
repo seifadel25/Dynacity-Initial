@@ -1,0 +1,276 @@
+﻿@model PagedList.IPagedList<DynacityFront.DTO.RentShowDTO>
+@using PagedList.Mvc;
+@using PagedList;
+@using Utility;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpAcc
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="margin-right:0!important;margin-left:0!important;">
+    <div class="hero page-inner overlay"
+         style="background-image: url('/images/hero_bg_1.jpg')!important">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 text-center mt-5">
+                    <h1 class="heading" data-aos="fade-up">Properties</h1>
+
+                    <nav aria-label="breadcrumb"
+                         data-aos="fade-up"
+                         data-aos-delay="200">
+                        <ol class="breadcrumb text-center justify-content-center">
+                            <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li class="breadcrumb-item active text-white-50"
+                                aria-current="page">
+                                Properties For Rent
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-4">
+        <div class="row pb-2">
+            <h1 class="text-primary">Properties offered for rent</h1>
+            <div class="col text-end pt-1">
+                <a class="btn btn-outline-primary" asp-action="Create">Add Property</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-properties">
+        <div class="col text-end pt-2">
+            @Html.ActionLink("Sort by Price", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter=ViewBag.CurrentFilter},new{@class="btn btn-outline-primary"})
+        </div>
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg- ">
+
+                        <div class="property-item mb-30">
+                            <a asp-controller="PropertySell" asp-action="Details" asp-route-SellId="@item.RentId" class="img">
+                                @if (item.Property.PropertyMainImageURL == null)
+                                {
+                                    <img src="~/images/img_1.jpg" alt="Image" class="img-fluid" />
+                                }
+                                <img src="@("~/image/"+item.Property.PropertyMainImageURL)" asp-append-version="true" class="img-fluid" style="height:56vh!important" />
+@*                                <img src="~/images/img_1.jpg" alt="Image" class="img-fluid" />
+*@
+</a>
+                            <div class="property-content">
+                                <div class="price mb-2">
+                                    <span>
+                                        @{
+                                            var SDate = item.StartDate.ToShortDateString();
+                                            var EDate = item.EndDate.ToShortDateString();
+                                        }
+                                        @Html.DisplayFor(modelitem =>item.RentPrice) EGP/ From @Html.DisplayFor(modelItem=>SDate)-@Html.DisplayFor(modelItem=>EDate)
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="d-block mb-2 text-black-50">@Html.DisplayFor(modelItem => item.Property.Title)</span>
+                                    <span class="city d-block mb-3">@Html.DisplayFor(modelItem => item.Property.City), @Html.DisplayFor(modelItem => item.Property.Country)</span>
+
+                                    <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                            <span class="icon-bed me-2"></span>
+                                            <span class="caption">@Html.DisplayFor(modelItem => item.Property.Bedrooms) beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                            <span class="icon-bath me-2"></span>
+                                            <span class="caption">@Html.DisplayFor(modelItem => item.Property.Bathrooms) baths</span>
+                                        </span>
+                                    </div>
+
+                                    <a asp-area="" asp-controller="PropertyRent" asp-action="Details" asp-route-RentId="@item.RentId"
+                                       class="btn btn-primary py-2 px-3">See details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+    @if (httpAcc.HttpContext.Session.GetString(SD.SessionToken) != null && httpAcc.HttpContext.User.IsInRole("Admin"))
+    {
+        <table class="table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Bedrooms
+                    </th>
+                    <th>
+                        Bathrooms
+                    </th>
+                    <th>
+                        Area
+                    </th>
+                    <th>
+                        Street Adress
+                    </th>
+                    <th>
+                        City
+                    </th>
+                    <th>
+                        Country
+                    </th>
+
+                    <th>
+                        Price
+                    </th>
+                    @*<th>
+                @Html.DisplayNameFor(model => model.Property.PropertyMainImageURL)
+
+                </th>
+
+                <th>
+                @Html.DisplayNameFor(model => model.Property.PropertyImageURL1)
+
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.Property.PropertyImageURL2)
+
+                </th>
+
+                <th>
+                @Html.DisplayNameFor(model => model.Property.PropertyImageURL3)
+
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.Property.PropertyImageURL4)
+
+                </th>
+
+                <th>
+                @Html.DisplayNameFor(model => model.Property.PropertyImageURL5)
+
+                </th>*@
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Bedrooms)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Bathrooms)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Area)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.StreetAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.City)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Country)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.ProfilePicture)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Property.Price)
+                        </td>
+                        @*<td>
+                @Html.DisplayFor(modelItem => item.Property.PropertyMainImageURL)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => item.Property.PropertyImageURL1)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => item.Property.PropertyImageURL2)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => item.Property.PropertyImageURL3)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => item.Property.PropertyImageURL4)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => item.Property.PropertyImageURL5)
+                </td>*@
+
+                        <td>
+
+                        <td>
+                            <a class="btn btn-primary" asp-controller="PropertyRent" asp-action="Update" asp-route-RentId="@item.RentId">Update</a>
+                            <a class="btn btn-danger" asp-controller="PropertyRent" asp-action="Delete" asp-route-RentId="@item.RentId">Delete</a>
+                            <a class="btn btn-secondary" asp-controller="PropertyRent" asp-action="Details" asp-route-RentId="@item.RentId">Details</a>
+
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+    }
+    
+    <span style="margin-left:38%!important;">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </span>
+    <div class="pagination">
+        @{
+            if (Model.PageNumber > 1)
+            {
+                @Html.ActionLink("<<", "Index", new { page = 1,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }, new { @class = "first" })
+                @Html.ActionLink("<", "Index", new { page = Model.PageNumber - 1 ,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}, new { @class = "previous" } )
+            }
+
+            if (Model.PageNumber < Model.PageCount)
+            {
+                @Html.ActionLink(">", "Index", new { page = Model.PageNumber + 1 ,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}, new { @class = "next" })
+                @Html.ActionLink(">>", "Index", new { page = Model.PageCount ,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}, new { @class = "last"})
+
+            }
+        }
+    </div>
+</div>
+
+@*<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

@@ -1,0 +1,128 @@
+﻿@model DynacityFront.DTO.PropertyRentCreateDTO
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="margin:8%!important">Add property for rent</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Property.Title" class="control-label"></label>
+                <input asp-for="Property.Title" class="form-control" />
+                <span asp-validation-for="Property.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PropertyMainImage" class="control-label"></label>
+                <input asp-for="Property.PropertyMainImage" accept="image/*" />
+                <span asp-validation-for="Property.PropertyMainImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PropertyImage1" class="control-label"></label>
+                <input asp-for="Property.PropertyImage1" accept="image/*" />
+                <span asp-validation-for="Property.PropertyImage1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PropertyImage2" class="control-label"></label>
+                <input asp-for="Property.PropertyImage2" accept="image/*" />
+                <span asp-validation-for="Property.PropertyImage2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PropertyImage3" class="control-label"></label>
+                <input asp-for="Property.PropertyImage3" accept="image/*" />
+                <span asp-validation-for="Property.PropertyImage3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PropertyImage4" class="control-label"></label>
+                <input asp-for="Property.PropertyImage4" accept="image/*" />
+                <span asp-validation-for="Property.PropertyImage4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.PropertyImage5" class="control-label"></label>
+                <input asp-for="Property.PropertyImage5" accept="image/*" />
+                <span asp-validation-for="Property.PropertyImage5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Description" class="control-label"></label>
+                <input asp-for="Property.Description" class="form-control" />
+                <span asp-validation-for="Property.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Bedrooms" class="control-label"></label>
+                <input asp-for="Property.Bedrooms" class="form-control" />
+                <span asp-validation-for="Property.Bedrooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Bathrooms" class="control-label"></label>
+                <input asp-for="Property.Bathrooms" class="form-control" />
+                <span asp-validation-for="Property.Bathrooms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Area" class="control-label"></label>
+                <input asp-for="Property.Area" class="form-control" />
+                <span asp-validation-for="Property.Area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.StreetAddress" class="control-label"></label>
+                <input asp-for="Property.StreetAddress" class="form-control" />
+                <span asp-validation-for="Property.StreetAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.Country" class="control-label"></label>
+                <input asp-for="Property.Country" class="form-control" />
+                <span asp-validation-for="Property.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Property.City" class="control-label"></label>
+                <input asp-for="Property.City" class="form-control" />
+                <span asp-validation-for="Property.City" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Property.PropertyType" class="control-label"></label>
+                <input asp-for="Property.PropertyType" class="form-control" />
+                <span asp-validation-for="Property.PropertyType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rent.StartDate" class="control-label"></label>
+                <input asp-for="Rent.StartDate" class="form-control" />
+                <span asp-validation-for="Rent.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rent.EndDate" class="control-label"></label>
+                <input asp-for="Rent.EndDate" class="form-control" />
+                <span asp-validation-for="Rent.EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rent.RentPrice" class="control-label"></label>
+                <input asp-for="Rent.RentPrice" class="form-control" />
+                <span asp-validation-for="Rent.RentPrice" class="text-danger"></span>
+            </div>
+            <@*div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Rent.IsActive" /> @Html.DisplayNameFor(model => model.Rent.IsActive)
+                </label>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Rent.RentDiscription" class="control-label"></label>
+                <input asp-for="Rent.RentDiscription" class="form-control" />
+                <span asp-validation-for="Rent.RentDiscription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

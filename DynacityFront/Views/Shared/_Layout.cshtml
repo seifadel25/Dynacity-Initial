@@ -1,0 +1,271 @@
+﻿@using Utility;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpAcc
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dynacity</title>
+   @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DynacityFront.styles.css" asp-append-version="true" />*@
+
+    <link rel="shortcut icon" href="~/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="~/css/tiny-slider.css" />
+    <link rel="stylesheet" href="~/css/aos.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/"/>
+
+
+</head>
+<body>
+    <partial name="_Notification"/>
+
+        <div>
+            <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close">
+                        <span class="icofont-close js-menu-toggle"></span>
+                    </div>
+                </div>
+                <div class="site-mobile-menu-body"></div>
+            </div>
+
+
+
+            <nav class="site-nav">
+                <div class="container">
+                    <div class="menu-bg-wrap">
+                        <div class="site-navigation">
+                            <a class="logo m-0 float-start" asp-area="" asp-controller="Home" asp-action="Index">Dynacity</a>
+
+                            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                                <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="has-children">
+                                    <a href="properties.html">Properties</a>
+                                    <ul class="dropdown">
+                                        <li><a asp-area="" asp-controller="Property" asp-action="Index">Buy Property</a></li>
+                                        <li><a asp-controller="PropertySell" asp-action="Index">Sell Property</a></li>
+                                        <li class="has-children">
+                                            <a href="#">Other</a>
+                                            <ul class="dropdown">
+                                                <li><a asp-area="" asp-controller="PropertyRent" asp-action="Index">Rent</a></li>
+                                            <li><a asp-controller="PropertyBid" asp-action="Index">Bid</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            @if (httpAcc.HttpContext.Session.GetString(SD.SessionToken) != null && httpAcc.HttpContext.User.IsInRole("Admin"))
+                            {
+                                <li class="has-children">
+                                    <a href="#">Admin</a>
+                                    <ul class="dropdown">
+                                        <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contracts</a></li>
+                                        <li><a asp-area="" asp-controller="User" asp-action="Index">Users</a></li>
+                                        <li><a>Event</a></li>
+                                    </ul>
+                                </li>
+                            }
+                            <li><a asp-area="" asp-controller="Event" asp-action="Index">Events</a></li>
+
+                            <li><a asp-area="" asp-controller="Home" asp-action="Services">Services</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">About</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
+                            @if(httpAcc.HttpContext.Session.GetString(SD.SessionToken) !=null &&
+                            httpAcc.HttpContext.Session.GetString(SD.SessionToken).ToString().Length>0){
+                                <li><a asp-controller="Auth" asp-action="Logout">Logout</a></li>
+
+                            }
+                            else
+                            {
+                                <li><a asp-controller="Auth" asp-action="Login">Login</a></li>
+                                <li><a asp-controller="Auth" asp-action="Register">Register</a></li>
+                            }
+                            
+                            </ul>
+
+                            <a href="#test"
+                               class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                               data-toggle="collapse"
+                               data-target="#main-navbar">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    @*else if(ViewBag.Show == 1)
+    {
+        <div style="margin-bottom:20%!important">
+            <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close">
+                        <span class="icofont-close js-menu-toggle"></span>
+                    </div>
+                </div>
+                <div class="site-mobile-menu-body"></div>
+            </div>
+
+
+
+            <nav class="site-nav">
+                <div class="container">
+                    <div class="menu-bg-wrap">
+                        <div class="site-navigation">
+                            <a class="logo m-0 float-start" asp-area="" asp-controller="Home" asp-action="Index">Dynasty</a>
+
+                            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                                <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="has-children">
+                                    <a href="properties.html">Properties</a>
+                                    <ul class="dropdown">
+                                        <li><a asp-area="" asp-controller="Property" asp-action="Index">Buy Property</a></li>
+                                        <li><a href="#">Sell Property</a></li>
+                                        <li class="has-children">
+                                            <a href="#">Other</a>
+                                            <ul class="dropdown">
+                                                <li><a asp-area="" asp-controller="Rent" asp-action="Index">Rent</a></li>
+                                                <li><a href="#">Bid</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Admin</a>
+                                    <ul class="dropdown">
+                                        <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contracts</a></li>
+                                        <li><a asp-area="" asp-controller="User" asp-action="Index">Users</a></li>
+                                        <li><a>Event</a></li>
+                                    </ul>
+                                </li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Services">Services</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">About</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
+                            </ul>
+
+                            <a href="#test"
+                               class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                               data-toggle="collapse"
+                               data-target="#main-navbar">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    }*@
+   
+    <div class="" style="margin-right:auto!important;margin-left:auto!important;margin-bottom:auto!important;">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address> 3rd District, Sheikh Zayed, Giza, Egypt</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="tel://+201002874096">+201002874096</a></li>
+                            <li><a href="tel://+201002874096">+201002874096</a></li>
+                            <li>
+                                <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Creative</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Links</h3>
+                        <ul class="list-unstyled links">
+                            <li><a href="#">Our Vision</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+
+                        <ul class="list-unstyled social">
+                            <li>
+                                <a href="#"><span class="icon-instagram"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-facebook"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-linkedin"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+    <!--Important Scripts-->
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="~/js/tiny-slider.js"></script>
+    <script src="~/js/aos.js"></script>
+    <script src="~/js/counter.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/navbar.js"></script>   
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,649 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\DynacityFront.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DynacityFront.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\Contain\\PagedList.css",
+      "PackagePath": "staticwebassets\\Contain\\PagedList.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\ResetPasswored.html",
+      "PackagePath": "staticwebassets\\ResetPasswored.html"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\aos.css",
+      "PackagePath": "staticwebassets\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\bootstrap\\mixins\\_text-truncate.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\mixins\\_text-truncate.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\slide.css",
+      "PackagePath": "staticwebassets\\css\\slide.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\css\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\css\\tiny-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\backup.txt",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\backup.txt"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\_flaticon.scss"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\font\\flaticon.html",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.html"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\flaticon\\license\\license.pdf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\license\\license.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\Read Me.txt",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\Read Me.txt"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\demo-files\\demo.css",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\demo-files\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\demo-files\\demo.js",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\demo-files\\demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\demo.html",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\demo.html"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\selection.json",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\selection.json"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\icomoon\\style.css",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\fonts\\index.html",
+      "PackagePath": "staticwebassets\\fonts\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\1233443899.png",
+      "PackagePath": "staticwebassets\\image\\1233443899.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\6234636104.png",
+      "PackagePath": "staticwebassets\\image\\6234636104.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\Cityscape232403004.png",
+      "PackagePath": "staticwebassets\\image\\Cityscape232403004.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\Cityscape235331173.png",
+      "PackagePath": "staticwebassets\\image\\Cityscape235331173.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One230003900.png",
+      "PackagePath": "staticwebassets\\image\\One230003900.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One230737270.png",
+      "PackagePath": "staticwebassets\\image\\One230737270.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One232002558.png",
+      "PackagePath": "staticwebassets\\image\\One232002558.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One232328344.png",
+      "PackagePath": "staticwebassets\\image\\One232328344.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One232729938.png",
+      "PackagePath": "staticwebassets\\image\\One232729938.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One232826292.png",
+      "PackagePath": "staticwebassets\\image\\One232826292.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One233023259.png",
+      "PackagePath": "staticwebassets\\image\\One233023259.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One233143520.png",
+      "PackagePath": "staticwebassets\\image\\One233143520.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One233420940.png",
+      "PackagePath": "staticwebassets\\image\\One233420940.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One233458425.png",
+      "PackagePath": "staticwebassets\\image\\One233458425.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One234341097.png",
+      "PackagePath": "staticwebassets\\image\\One234341097.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One235517045.png",
+      "PackagePath": "staticwebassets\\image\\One235517045.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\One235858630.png",
+      "PackagePath": "staticwebassets\\image\\One235858630.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\Six233026574.png",
+      "PackagePath": "staticwebassets\\image\\Six233026574.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\Three234055368.jpeg",
+      "PackagePath": "staticwebassets\\image\\Three234055368.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\Three234125335.jpeg",
+      "PackagePath": "staticwebassets\\image\\Three234125335.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\image\\Three234711639.jpeg",
+      "PackagePath": "staticwebassets\\image\\Three234711639.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\11.png",
+      "PackagePath": "staticwebassets\\images\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\33.jpg",
+      "PackagePath": "staticwebassets\\images\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\1st.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\1st.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\2nd.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\2nd.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\AMER.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\AMER.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\EMAAR.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\EMAAR.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\MIVIDIA.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\MIVIDIA.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\NASR.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\NASR.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\OUD.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\OUD.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Sponsers\\morshedy.jpeg",
+      "PackagePath": "staticwebassets\\images\\Sponsers\\morshedy.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Us\\h.png",
+      "PackagePath": "staticwebassets\\images\\Us\\h.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Us\\k.jpg",
+      "PackagePath": "staticwebassets\\images\\Us\\k.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Us\\mor.jpg",
+      "PackagePath": "staticwebassets\\images\\Us\\mor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Us\\s.png",
+      "PackagePath": "staticwebassets\\images\\Us\\s.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\Us\\yos.jpg",
+      "PackagePath": "staticwebassets\\images\\Us\\yos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\comb-2.png",
+      "PackagePath": "staticwebassets\\images\\comb-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\comb-3.webp",
+      "PackagePath": "staticwebassets\\images\\comb-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\comb-4.jpg",
+      "PackagePath": "staticwebassets\\images\\comb-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\comb-5.jpg",
+      "PackagePath": "staticwebassets\\images\\comb-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\comb-7.jpg",
+      "PackagePath": "staticwebassets\\images\\comb-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\comb-8.jpg",
+      "PackagePath": "staticwebassets\\images\\comb-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\dots.png",
+      "PackagePath": "staticwebassets\\images\\dots.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\hero_bg_1.jpg",
+      "PackagePath": "staticwebassets\\images\\hero_bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\hero_bg_2.jpg",
+      "PackagePath": "staticwebassets\\images\\hero_bg_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\hero_bg_3.jpg",
+      "PackagePath": "staticwebassets\\images\\hero_bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_1.jpg",
+      "PackagePath": "staticwebassets\\images\\img_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_2.jpg",
+      "PackagePath": "staticwebassets\\images\\img_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_3.jpg",
+      "PackagePath": "staticwebassets\\images\\img_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_4.jpg",
+      "PackagePath": "staticwebassets\\images\\img_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_5.jpg",
+      "PackagePath": "staticwebassets\\images\\img_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_6.jpg",
+      "PackagePath": "staticwebassets\\images\\img_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_7.jpg",
+      "PackagePath": "staticwebassets\\images\\img_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\img_8.jpg",
+      "PackagePath": "staticwebassets\\images\\img_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\index.html",
+      "PackagePath": "staticwebassets\\images\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\images\\signup copy.png",
+      "PackagePath": "staticwebassets\\images\\signup copy.png"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\aos.js",
+      "PackagePath": "staticwebassets\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\counter.js",
+      "PackagePath": "staticwebassets\\js\\counter.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\navbar.js",
+      "PackagePath": "staticwebassets\\js\\navbar.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\js\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\js\\tiny-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Saif\\Downloads\\frontFainalV1\\front\\DynacityFront\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.DynacityFront.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.DynacityFront.props",
+      "PackagePath": "build\\DynacityFront.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.DynacityFront.props",
+      "PackagePath": "buildMultiTargeting\\DynacityFront.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.DynacityFront.props",
+      "PackagePath": "buildTransitive\\DynacityFront.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

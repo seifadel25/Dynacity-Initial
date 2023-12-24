@@ -1,0 +1,153 @@
+﻿@model DynacityFront.DTO.PropertySellDTO
+@using Utility;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpAcc
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="hero page-inner overlay"
+     style="background-image: url('/images/hero_bg_3.jpg')">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">
+                    @Html.DisplayFor(model => model.Property.StreetAddress)
+                </h1>
+
+                <nav aria-label="breadcrumb"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item">
+                            <a asp-controller="Property" asp-action="Index">Properties</a>
+                        </li>
+                        <li class="breadcrumb-item active text-white-50"
+                            aria-current="page">
+                            @Html.DisplayFor(model => model.Property.StreetAddress)
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-7">
+                <div class="img-property-slide-wrap">
+                    <div class="img-property-slide">
+                        @if (Model.Property.PropertyImageURL5 == null || Model.Property.PropertyImageURL4 == null)
+                        {
+                            <img src="~/images/img_1.jpg" alt="Image" class="img-fluid" />
+                            <img src="~images/img_1.jpg" alt="Image" class="img-fluid" />
+                            <img src="~images/img_2.jpg" alt="Image" class="img-fluid" />
+                            <img src="~images/img_3.jpg" alt="Image" class="img-fluid" />
+                        }
+                        <img src="@("~/image/"+Model.Property.PropertyImageURL5)" asp-append-version="true" class="img-fluid" style="height:40vh!important" />
+                        <img src="@("~/image/"+Model.Property.PropertyImageURL1)" asp-append-version="true" class="img-fluid" style="height:40vh!important" />
+                        <img src="@("~/image/"+Model.Property.PropertyImageURL2)" asp-append-version="true" class="img-fluid" style="height:40vh!important" />
+                        <img src="@("~/image/"+Model.Property.PropertyImageURL3)" asp-append-version="true" class="img-fluid" style="height:40vh!important" />
+                        <img src="@("~/image/"+Model.Property.PropertyImageURL4)" asp-append-version="true" class="img-fluid" style="height:40vh!important" />
+
+                        @*<img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                        <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                        <img src="images/img_3.jpg" alt="Image" class="img-fluid" />*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="heading text-primary">@Html.DisplayFor(model => model.Property.StreetAddress)</h2>
+                <p class="meta">@Html.DisplayFor(model => model.Property.City), @Html.DisplayFor(model => model.Property.Country)</p>
+                <h3 class="heading text-primary">@Html.DisplayFor(model => model.Sell.SellPrice) EGP </h3>
+                <h3>
+                    <a type="button" class="btn btn-secondary btn-lg" href="https://api.sandbox.paypal.com/v1/payments">Reserve Now!</a>
+                </h3>
+                <p class="text-black-50">
+                    @Html.DisplayFor(model =>model.Property.Title)
+                </p>
+                <p class="text-black-50">
+                    @Html.DisplayFor(model => model.Property.Area) Square Metre
+                </p>
+                <p class="text-black-50">
+                    @Html.DisplayFor(model => model.Property.Bedrooms) Bedrooms <span class="icon-bed me-2"></span>
+                </p>
+                <p class="text-black-50">
+                    @Html.DisplayFor(model => model.Property.Bathrooms) Bathrooms <span class="icon-bath me-2"></span>
+                </p>
+                <p class="text-black-50">Description:@Html.DisplayFor(model => model.Property.Description) </p>
+                <p class="text-black-50">
+                  Sell Description: @Html.DisplayFor(model => model.Sell.SellDiscription)
+                </p>
+
+                <div class="d-block agent-box p-5">
+                    <div class="img mb-4">
+                        <img src="images/person_2-min.jpg"
+                             alt="Image"
+                             class="img-fluid" />
+                    </div>
+                    <div class="text">
+                        <h3 class="mb-0">@Html.DisplayFor(model => model.Property.UserID)</h3>
+                        <div class="meta mb-3">Real Estate</div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione laborum quo quos omnis sed magnam id ducimus saepe
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ @if (httpAcc.HttpContext.Session.GetString(SD.SessionToken) != null && httpAcc.HttpContext.User.IsInRole("Admin"))
+{
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Details">
+                <div class="form-group">
+                    @* Need fix
+                <input hidden asp-for="Sell.SellId" class="form-control" />
+
+                *@
+                    <input hidden asp-for="Sell.SellId" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.Title" class="control-label"></label>
+                    <input disabled asp-for="Property.Title" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.Description" class="control-label"></label>
+                    <input disabled asp-for="Property.Description" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.Bedrooms" class="control-label"></label>
+                    <input disabled asp-for="Property.Bedrooms" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.Bathrooms" class="control-label"></label>
+                    <input disabled asp-for="Property.Bathrooms" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.Area" class="control-label"></label>
+                    <input disabled asp-for="Property.Area" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.PropertyMainImage" class="control-label"></label>
+                    <input disabled asp-for="Property.PropertyMainImage" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Property.Price" class="control-label"></label>
+                    <input disabled asp-for="Property.Price" class="form-control" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

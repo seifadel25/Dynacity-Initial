@@ -1,0 +1,138 @@
+﻿@model PagedList.IPagedList<DynacityFront.DTO.PropertyDTO>
+@using PagedList.Mvc;
+@using PagedList;
+@using Utility;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpAcc
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="hero">
+<div class="hero-slide">
+    <div class="img overlay"
+         style="background-image: url('/images/hero_bg_3.jpg')"></div>
+    <div class="img overlay"
+         style="background-image: url('/images/hero_bg_2.jpg')"></div>
+    <div class="img overlay"
+         style="background-image: url('/images/hero_bg_1.jpg')"></div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center">
+            <h1 class="heading" data-aos="fade-up">
+                    The Best Move You'll Ever Make
+            </h1>
+                @using (Html.BeginForm("Index", "Property", FormMethod.Get))
+                {
+                    //@Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+                
+                <form
+                  class="narrow-w form-search d-flex align-items-stretch mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="200">
+                        <input id="SearchString" type="text" name="SearchString"
+                       class="form-control px-4"
+                       placeholder="Your City. e.g. Giza" />
+                    <button  value="Search" type="submit" class="btn btn-primary">Search</button>
+            </form>
+            }
+        </div>
+    </div>
+</div>
+      </div>
+      <hr />
+<div class="container">
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-6">
+            <h2 class="font-weight-bold text-primary heading">
+                Popular Properties
+            </h2>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+            <p>
+                <a asp-area="" asp-controller="Property" asp-action="Index"
+                   target="_blank"
+                   class="btn btn-primary text-white py-3 px-4">View all properties</a>
+            </p>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-12">
+            <div class="property-slider-wrap">
+                <div class="property-slider">
+          @foreach(var item in Model )
+    {
+                     <div class="property-item">
+                            <a asp-controller="Property" asp-action="Details" asp-route-Propertyid="@item.PropertyId" class="img">
+                                @if (item.PropertyMainImageURL == null)
+                                {
+                                    <img src="~/images/img_1.jpg" alt="Image" class="img-fluid" />
+                                }
+                                <img src="@("~/image/"+item.PropertyMainImageURL)" asp-append-version="true" alt="Image" class="img-fluid" style="height:56vh!important" />
+                                </a>
+                            <div class="property-content">
+                                <div class="price mb-2">
+                                    <span>
+                                        @Html.DisplayFor(modelItem => item.Price) EGP
+                                    </span>
+                                </div>
+                                    <div>
+                                    <span class="d-block mb-2 text-black-50">@Html.DisplayFor(modelItem => item.StreetAddress)</span>
+                                    <span class="city d-block mb-3">@Html.DisplayFor(modelItem => item.City), @Html.DisplayFor(modelItem => item.Country)</span>
+
+                                    <div class="specs d-flex mb-4">
+                                        <span class="d-block d-flex align-items-center me-3">
+                                            <span class="icon-bed me-2"></span>
+                                            <span class="caption">@Html.DisplayFor(modelItem => item.Bedrooms) beds</span>
+                                        </span>
+                                        <span class="d-block d-flex align-items-center">
+                                            <span class="icon-bath me-2"></span>
+                                            <span class="caption">@Html.DisplayFor(modelItem => item.Bathrooms) baths</span>
+                                        </span>
+                                    </div>
+
+                                    <a asp-controller="Property" asp-action="Details" asp-route-Propertyid="@item.PropertyId"
+                                       class="btn btn-primary py-2 px-3">See details</a>
+                                    </div>
+                                </div>
+                            </div>
+                       
+    }
+                    
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <span style="margin:auto!important;margin-left:45%!important;">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    </span>
+    <div style="margin:auto!important;">
+        <div style="margin:auto!important;margin-left:45%!important;">
+        @{
+            if (Model.PageNumber > 1)
+            {
+                    <span class="property-slider  mb-2">
+                @Html.ActionLink("<<", "Index", new { page = 1,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }, new { @class = "first" })
+                    </span>
+                    <span class="property-slider  mb-2">
+                @Html.ActionLink("<", "Index", new { page = Model.PageNumber - 1 ,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}, new { @class = "previous" } )
+                    </span>
+            }
+
+            if (Model.PageNumber < Model.PageCount)
+            {
+                    <span class="property-slider mb-2">
+                @Html.ActionLink(">", "Index", new { page = Model.PageNumber + 1 ,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}, new { @class = "next" })
+                </span>
+                    <span class="property-slider  mb-2">
+                @Html.ActionLink(">>", "Index", new { page = Model.PageCount ,sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}, new { @class = "last"})
+                    </span>
+            }
+        }
+    </div>
+    </div>
+</div>
